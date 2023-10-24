@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div id="input">
+    <div class="cont">
+        <h1>Shape Calculator</h1>
+        <label for="shape">Select a shape:</label>
+        <select id="shape">
+            <option value="circle" href="../html/circle.html">Circle</option>
+            <option value="rectangle" href="../html/rectangle.html">Rectangle</option>
+            <option value="square" href="../html/square.html">Square</option>
+        </select><br><br>
+
+        <div id="circleInputs">
+            <label for="diameter">Diameter:</label>
+            <input type="number" id="diameter"><br>
+        </div>
+
+        <div id="rectangleInputs">
+            <label for="width">Width:</label>
+            <input type="number" id="width"><br>
+            <label for="length">Length:</label>
+            <input type="number" id="length"><br>
+        </div>
+
+        <div id="squareInputs">
+            <label for="side">Side Length:</label>
+            <input type="number" id="side"><br>
+        </div>
+
+        <button onclick="calculate()">Calculate</button><br><br>
+
+        <div id="result"></div>
+    </div>
+</div>
+</body>
+<script src="../js/main.js"></script>
+</html>
